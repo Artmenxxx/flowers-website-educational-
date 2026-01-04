@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/style/css/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <title>Document</title>
+    <title>Flower Shop</title>
 </head>
 <body>
     <header class="header_nav" id="header_nav">
@@ -16,6 +16,7 @@
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
             <span class="navbar-toggler-icon"></span>
             </button>
+            <button class="language" id="languageBtn">EN</button>
 
             <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav mx-auto">
@@ -26,10 +27,7 @@
                 <a class="nav-link" href="#">Link</a>
                 </li>
                 <li class="nav-item">
-                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-                </li>
-                <li class="nav-item dropup">
-                <a class="nav-link dropdown-toggle" href="#" id="dropdown10" data-toggle="dropdown" aria-expanded="false">Dropup</a>
+                <a class="nav-link" href="#">Link</a>
                 </li>
             </ul>
             </div>
@@ -42,7 +40,7 @@
                 <div class="row">
                     <div class="col text-white">
                         <h1>Welcome to Flower Shop</h1>
-                        <p>Your one-stop shop for all things floral!</p>
+                        <p class="main_info">Your one-stop shop for all things floral!</p>
                     </div>
                 </div>
             </div>
@@ -51,14 +49,75 @@
         <div class="about_us">
             <div class="container">
                 <div class="row">
-                    <div class="col text-center">
+                    <div class="col-12 col-md-6">
+                        <div class="flowers_images">
+                            <div class="flower_image"><img src="style/images/flower1.jpeg" alt="Flower 1"></div>
+                            <div class="flower_image"><img src="style/images/flower2.jpeg" alt="Flower 2"></div>
+                            <div class="flower_image"><img src="style/images/flower3.jpeg" alt="Flower 3"></div>
+                            <div class="flower_image"><img src="style/images/flower3.jpeg" alt="Flower 3"></div>
+                        </div>
+                    </div>
+                    <div class="info_us col-12 col-md-6 text-center text-white">
                         <h2>About Us</h2>
                         <p>At Flower Shop, we are passionate about bringing the beauty of flowers into your life. Whether you're looking for a stunning bouquet for a special occasion or just want to brighten up your day, we've got you covered.</p>
                     </div>
-                    <div class="flowers_images">
-                        <div class="flower_image"><img src="style/images/flower1.jpeg" alt="Flower 1"></div>
-                        <div class="flower_image"><img src="style/images/flower2.jpeg" alt="Flower 2"></div>
-                        <div class="flower_image"><img src="style/images/flower3.jpeg" alt="Flower 3"></div>
+                </div>
+            </div>
+        </div>
+        <div class="line"></div>
+        <div class="carousel">
+            <div class="container text-center text-white">
+                <h2>Our Products</h2>
+                <div id="productCarousel" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="style/images/product1.jpeg" class="d-block w-100" alt="Product 1">
+                            <div class="carousel-caption d-none d-md-block">
+                                <div class="info_products">
+                                    <h5 class="product-name">Rose Bouquet</h5>
+                                    <p class="product-description">Fresh red roses for every occasion.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="style/images/product2.jpeg" class="d-block w-100" alt="Product 2">
+                            <div class="carousel-caption d-none d-md-block">
+                                <div class="info_products">
+                                    <h5 class="product-name">Tulip Arrangement</h5>
+                                    <p class="product-description">Bright and colorful tulips to brighten your day.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="style/images/product3.jpeg" class="d-block w-100" alt="Product 3">
+                            <div class="carousel-caption d-none d-md-block">
+                                <div class="info_products">
+                                    <h5 class="product-name">Mixed Flower Basket</h5>
+                                    <p class="product-description">A beautiful mix of seasonal flowers.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#productCarousel" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#productCarousel" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="line"></div>
+        <div class="contact_us">
+            <div class="container text-center text-white">
+                <div class="row">
+                    <div class="col">
+                        <h2>Contact Us</h2>
+                        <p>If you have any questions or would like to place an order, please don't hesitate to reach out!</p>
+                        <p>Email: info@flowershop.com</p>
                     </div>
                 </div>
             </div>
@@ -66,9 +125,18 @@
     </main>
 
     <footer>
-
+        <div class="footer_bg">
+            <div class="container text-center text-white">
+                <div class="row">
+                    <div class="col">
+                        <p class="footer_info">&copy; 2024 Flower Shop. All rights reserved.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </footer>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-<script src="/script/main.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script src="/script/main.js"></script>
 </body>
 </html>
