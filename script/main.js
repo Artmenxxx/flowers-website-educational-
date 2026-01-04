@@ -15,10 +15,11 @@ function translateToRussian() {
     const navbarBrand = document.querySelector('.navbar-brand');
     if (navbarBrand) navbarBrand.textContent = 'Цветочный магазин';
     const navLinks = document.querySelectorAll('.nav-link');
-    if (navLinks.length >= 3) {
+    if (navLinks.length >= 4) {
         navLinks[0].textContent = 'Главная';
-        navLinks[1].textContent = 'Ссылка';
-        navLinks[2].textContent = 'Ссылка';
+        navLinks[1].textContent = 'О нас';
+        navLinks[2].textContent = 'Продукты';
+        navLinks[3].textContent = 'Контакты';
     }
     // Main Content
     const h1 = document.querySelector('h1');
